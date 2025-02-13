@@ -50,7 +50,7 @@
 
         .quote {
             font-family: 'Great Vibes', cursive;
-            font-size: 1.8rem;
+            font-size: 2.8rem;
             margin: 1.5rem 0;
             color: #003366;
         }
@@ -146,7 +146,7 @@
         /* 📌 CUENTA REGRESIVA */
         .countdown {
             font-weight: bold;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
         }
 
         /* 📌 RESPONSIVE DESIGN */
@@ -183,7 +183,7 @@
 
         <!-- 📌 Sección de confirmación -->
         <div class="confirmacion">
-            <a href="https://wa.me/qr/5SI6D7PIPLOBL1" target="_blank">
+            <a href="https://wa.me/qr/5WGFPSXQCV3XF1" target="_blank">
                 <i class="fa-brands fa-whatsapp whatsapp-icon"></i> ¿Nos acompañas? ¡Confirma tu asistencia!
             </a>
         </div>
@@ -212,7 +212,7 @@
 
         <!-- 📌 Cuenta regresiva -->
         <div class="countdown" id="countdown">
-            Faltan: <span id="timer"></span> para el gran día 
+            <span id="timer"></span> para el gran día 
         </div>
     </div>
 
@@ -226,7 +226,7 @@
             const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
             const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 
-            document.getElementById("timer").innerHTML = `${dias} días y ${horas} horas`;
+            document.getElementById("timer").innerHTML = `${dias} días`;
 
             if (diferencia < 0) {
                 document.getElementById("timer").innerHTML = "¡Hoy es el gran día! 🎉";
