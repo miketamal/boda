@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boda Ferni & César</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Great+Vibes&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+        body {
+            background: #faf3e6;
+            color: #5e4b3a;
+            font-family: 'Raleway', sans-serif;
+            text-align: center;
+            padding: 2rem;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: linear-gradient(to bottom, rgba(250,243,230,0.9), rgba(250,243,230,0.9)), 
+                              url('https://transparenttextures.com/patterns/cream-paper.png');
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 2rem;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid #d4c1ab;
+            padding-bottom: 1rem;
+            letter-spacing: 2px;
+        }
+
+        .quote {
+            font-family: 'Great Vibes', cursive;
+            font-size: 1.8rem;
+            margin: 2rem 0;
+            line-height: 1.4;
+            color: #7b6852;
+        }
+
+        .confirmacion, .location-item {
+            font-size: 1.2rem;
+            color: #5e4b3a;
+            margin: 1.5rem 0;
+            padding: 1.5rem;
+            background: rgba(255,255,255,0.9);
+            border-radius: 12px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 10px;
+            width: 100%;
+            max-width: 600px;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .whatsapp-icon {
+            font-size: 1.2rem; /* Tamaño reducido */
+            color: #5e4b3a; /* Color marrón discreto */
+            transition: color 0.3s ease;
+        }
+
+        .whatsapp-icon:hover {
+            color: #25D366; /* Cambio a verde al pasar el cursor */
+        }
+
+        .confirmacion a {
+            text-decoration: none;
+            color: #5e4b3a;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .confirmacion a:hover {
+            text-decoration: underline;
+            color: #8b6f56;
+        }
+
+        .locations {
+            list-style: none;
+            padding: 0;
+            margin: 2rem 0;
+            text-align: left;
+        }
+
+        .location-item i {
+            font-size: 1.5rem;
+            color: #8b6f56;
+        }
+
+        .location-text a {
+            text-decoration: none;
+            color: #5e4b3a;
+            font-weight: bold;
+        }
+
+        .location-text a:hover {
+            text-decoration: underline;
+        }
+
+        /* Cuenta regresiva */
+        .countdown {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-top: 40px;
+            padding: 15px;
+            background: rgba(255,255,255,0.9);
+            border-radius: 12px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 600px;
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .quote {
+                font-size: 1.5rem;
+            }
+
+            .confirmacion {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Boda Ferni & César</h1>
+        
+        <p class="quote">"El amor no cuenta el tiempo, sino los momentos que lo hacen eterno"</p>
+        
+        <p style="margin-bottom: 1rem; font-style: italic; color: #7b6852;">
+            Acompáñennos en este día lleno de alegría, promesas y nuevos comienzos.
+        </p>
+
+        <!-- Sección de confirmación alineada a la izquierda -->
+        <div class="confirmacion">
+            <a href="https://wa.me/qr/5WGFPSXQCV3XF1" target="_blank">
+                <i class="fa-brands fa-whatsapp whatsapp-icon"></i> Confirma tu asistencia, para que nadie falte en nuestra Boda
+            </a>
+        </div>
+
+        <ul class="locations">
+            <li class="location-item">
+                <i class="fa-solid fa-church"></i>
+                <span class="location-text">
+                    <a href="https://maps.app.goo.gl/htcJwKDncKPUigxM9" target="_blank">Capilla de San Pedro</a>
+                </span>
+            </li>
+            <li class="location-item">
+                <i class="fa-solid fa-home"></i>
+                <span class="location-text">
+                    <a href="https://maps.app.goo.gl/rPdQcncAZxWnSDD9A" target="_blank">Quinta San José</a>
+                </span>
+            </li>
+            <li class="location-item">
+                <i class="fa-solid fa-gift"></i>
+                <span class="location-text">
+                    <a href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51614208" target="_blank">Mesa de Regalos</a>
+                </span>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Cuenta regresiva al final de la página -->
+    <div class="countdown" id="countdown">
+        Faltan: <span id="timer"></span> para el gran día 🎉
+    </div>
+
+    <!-- Script de cuenta regresiva -->
+    <script>
+        function actualizarCuentaRegresiva() {
+            const fechaBoda = new Date("May 17, 2025 13:00:00").getTime();
+            const ahora = new Date().getTime();
+            const diferencia = fechaBoda - ahora;
+
+            const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+            const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+            document.getElementById("timer").innerHTML = `${dias} días y ${horas} horas`;
+
+            if (diferencia < 0) {
+                document.getElementById("timer").innerHTML = "¡Hoy es el gran día! 🎉";
+            }
+        }
+
+        setInterval(actualizarCuentaRegresiva, 1000);
+        actualizarCuentaRegresiva();
+    </script>
+</body>
+</html>
